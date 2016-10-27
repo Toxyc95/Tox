@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Options</string>
-    <string name="select_resolution">Resolution</string>
+    <string name="select_resolution">Resolution:</string>
+    <string name="verticalsync">Vertical Sync:</string>
+    <string name="graphicquality">Graphic Quality:</string>
+    <string name="viewdistandetextview">View DIstance:</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="high">High</string>
     <string-array name="resolutions">
         <item>800x600</item>
         <item>1024x768</item>
@@ -12,5 +18,6 @@
         <item>2560x1600</item>
 
     </string-array>
+    <string name="apbutton">Apply</string>
 
 </resources>

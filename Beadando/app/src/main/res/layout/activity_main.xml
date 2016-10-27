@@ -28,57 +28,23 @@
     </Spinner>
 
     <TextView
-        android:text="Vertical Sync"
+        android:text="@string/verticalsync"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/spinnerres"
         android:layout_marginTop="49dp"
-        android:id="@+id/textView6" />
+        android:id="@+id/verticalsync" />
 
-    <CheckBox
+ <TextView
+        android:text="@string/graphicquality"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView6"
-        android:layout_toLeftOf="@+id/spinnerres"
-        android:layout_toStartOf="@+id/spinnerres"
-        android:id="@+id/checkBox3" />
-
-    <TextView
-        android:text="Graphic Quality"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView6"
+        android:layout_below="@+id/verticalsync"
         android:layout_marginTop="51dp"
-        android:id="@+id/textView7" />
+        android:id="@+id/graphicquality" />
 
-    <RadioButton
-        android:text="RadioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/radioButton2"
-        android:layout_alignBottom="@+id/textView7"
-        android:layout_alignRight="@+id/checkBox3"
-        android:layout_alignEnd="@+id/checkBox3" />
-
-    <TextView
-        android:text="View DIstance"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:id="@+id/textView8"
-        android:layout_below="@+id/textView7"
-        android:layout_alignRight="@+id/textView7"
-        android:layout_alignEnd="@+id/textView7" />
-
-    <SeekBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/seekBar"
-        android:layout_alignBottom="@+id/textView8"
-        android:layout_toLeftOf="@+id/checkBox3" />
-
-    <Button
-        android:text="Apply"
+ <Button
+        android:text="@string/apbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -86,5 +52,92 @@
         android:layout_marginBottom="23dp"
         android:id="@+id/apbutton" />
 
+ <SeekBar
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/viewdistanceseekbar"
+     android:layout_alignTop="@+id/viewdistandetextview"
+     android:layout_toRightOf="@+id/verticalsynccheckbox"
+     android:layout_toEndOf="@+id/verticalsynccheckbox"
+     android:scrollbarSize="30dp" />
+
+ <CheckBox
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/verticalsynccheckbox"
+     android:layout_alignBaseline="@+id/verticalsync"
+     android:layout_alignBottom="@+id/verticalsync"
+     android:layout_toLeftOf="@+id/spinnerres"
+     android:layout_toStartOf="@+id/spinnerres" />
+
+ <TextView
+        android:text="@string/viewdistandetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:id="@+id/viewdistandetextview"
+     android:layout_above="@+id/apbutton"
+     android:layout_alignRight="@+id/graphicquality"
+     android:layout_alignEnd="@+id/graphicquality"
+     android:layout_marginBottom="61dp" />
+
+
+ <TextView
+     android:text="@string/medium"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/medium"
+     android:layout_centerVertical="true"
+     android:layout_toRightOf="@+id/res"
+     android:layout_toEndOf="@+id/res" />
+
+ <TextView
+     android:text="@string/low"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/low"
+     android:layout_above="@+id/medium"
+     android:layout_toRightOf="@+id/verticalsync"
+     android:layout_toEndOf="@+id/verticalsync"
+     android:layout_marginBottom="26dp" />
+
+ <TextView
+     android:text="@string/high"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/high"
+     android:layout_below="@+id/medium"
+     android:layout_alignLeft="@+id/low"
+     android:layout_alignStart="@+id/low"
+     android:layout_marginTop="30dp" />
+
+ <RadioGroup
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignTop="@+id/low"
+     android:layout_alignRight="@+id/apbutton"
+     android:layout_alignEnd="@+id/apbutton">
+
+  <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/lowradiobutton"
+      android:layout_marginBottom="8dp"
+     />
+
+  <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"
+      android:id="@+id/mediumradiobutton"
+     />
+
+  <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/highradiobutton"
+      android:layout_marginBottom="9dp"
+     />
+
+ </RadioGroup>
 
 </RelativeLayout>
