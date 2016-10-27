@@ -8,17 +8,52 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    String r1=null;
+    String vs1=null;
+    String resultquality=null;
+    Integer vd1=0;
     Button apply;
     Spinner spinner;
     ArrayAdapter<CharSequence> adapter;
 
+    public void select_quality(View view)
+    {
+        boolean checked = ((RadioButton) view).isChecked();
+        switch (view.getId())
+        {
+            case R.id.lowradiobutton:
+                if(checked)
+                {
+                    resultquality="Graphic Quality is set to Low";
+                }
+                break;
+            case R.id.mediumradiobutton:
+                if(checked)
+                {
+                    resultquality="Graphic Quality is set to Medium";
+                }
+                break;
+            case R.id.highradiobutton:
+                if(checked)
+                {
+                    resultquality="Graphic Quality is set to High";
+                }
+                break;
+
+
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         spinner = (Spinner) findViewById(R.id.spinnerres);
@@ -42,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, Main2Activity.class);
+                i.putExtra("resultq",resultquality);
                 startActivity(i);
             }
         });
