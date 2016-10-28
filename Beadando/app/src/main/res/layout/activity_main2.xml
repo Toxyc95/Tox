@@ -19,23 +19,23 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="86dp"
-        android:id="@+id/textView2"
+        android:id="@+id/resus"
+        android:gravity="center"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:id="@+id/vsintvs"
+        android:gravity="center"
+        android:layout_below="@+id/resus"
+        android:layout_alignLeft="@+id/resus"
+        android:layout_alignStart="@+id/resus" />
 
     <TextView
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         android:layout_marginTop="27dp"
         android:id="@+id/resultquality"
         android:gravity="center"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/vsintvs"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView5"
+        android:gravity="center"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

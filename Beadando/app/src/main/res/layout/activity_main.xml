@@ -44,15 +44,6 @@
         android:layout_marginBottom="23dp"
         android:id="@+id/apbutton" />
 
- <SeekBar
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:id="@+id/viewdistanceseekbar"
-     android:layout_alignTop="@+id/viewdistandetextview"
-     android:layout_toRightOf="@+id/verticalsynccheckbox"
-     android:layout_toEndOf="@+id/verticalsynccheckbox"
-     android:scrollbarSize="30dp" />
-
  <TextView
         android:text="@string/viewdistandetextview"
         android:layout_width="wrap_content"
@@ -126,5 +117,25 @@
      android:layout_alignBottom="@+id/verticalsync"
      android:layout_toRightOf="@+id/apbutton"
      android:layout_toEndOf="@+id/apbutton" />
+
+ <SeekBar
+     android:max="10"
+     android:layout_width="100dp"
+     android:layout_height="wrap_content"
+     android:id="@+id/viewdistanceseekbar"
+     android:scrollbarSize="30dp"
+     android:layout_alignTop="@+id/viewdistandetextview"
+     android:layout_toLeftOf="@+id/spinnerres"
+     android:layout_toStartOf="@+id/spinnerres" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/viewdistanceseekbar"
+     android:layout_toRightOf="@+id/apbutton"
+     android:layout_toEndOf="@+id/apbutton"
+     android:layout_marginLeft="10dp"
+     android:layout_marginStart="10dp"
+     android:id="@+id/sbartv" />
 
 </RelativeLayout>
