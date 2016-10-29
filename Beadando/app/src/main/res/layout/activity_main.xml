@@ -27,14 +27,6 @@
         >
     </Spinner>
 
-    <TextView
-        android:text="@string/verticalsync"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spinnerres"
-        android:layout_marginTop="49dp"
-        android:id="@+id/verticalsync" />
-
  <Button
         android:text="@string/apbutton"
         android:layout_width="wrap_content"
@@ -43,16 +35,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="23dp"
         android:id="@+id/apbutton" />
-
- <TextView
-        android:text="@string/viewdistandetextview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-     android:id="@+id/viewdistandetextview"
-     android:layout_above="@+id/apbutton"
-     android:layout_alignRight="@+id/graphicquality"
-     android:layout_alignEnd="@+id/graphicquality"
-     android:layout_marginBottom="61dp" />
 
 
  <RadioGroup
@@ -63,6 +45,7 @@
 
 
   <RadioButton
+      android:checked="true"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:id="@+id/lowradiobutton"
@@ -100,35 +83,6 @@
  </RadioGroup>
 
  <TextView
-        android:text="@string/graphicquality"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-     android:layout_marginTop="28dp"
-        android:id="@+id/graphicquality"
-     android:layout_below="@+id/verticalsynccheckbox"
-     android:layout_alignParentLeft="true"
-     android:layout_alignParentStart="true" />
-
- <CheckBox
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:id="@+id/verticalsynccheckbox"
-     android:layout_alignBaseline="@+id/verticalsync"
-     android:layout_alignBottom="@+id/verticalsync"
-     android:layout_toRightOf="@+id/apbutton"
-     android:layout_toEndOf="@+id/apbutton" />
-
- <SeekBar
-     android:max="10"
-     android:layout_width="100dp"
-     android:layout_height="wrap_content"
-     android:id="@+id/viewdistanceseekbar"
-     android:scrollbarSize="30dp"
-     android:layout_alignTop="@+id/viewdistandetextview"
-     android:layout_toLeftOf="@+id/spinnerres"
-     android:layout_toStartOf="@+id/spinnerres" />
-
- <TextView
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
      android:layout_below="@+id/viewdistanceseekbar"
@@ -137,5 +91,35 @@
      android:layout_marginLeft="10dp"
      android:layout_marginStart="10dp"
      android:id="@+id/sbartv" />
+
+ <TextView
+        android:text="@string/graphicquality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_marginTop="24dp"
+        android:id="@+id/graphicquality"
+     android:layout_below="@+id/switch1"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true" />
+
+ <TextView
+     android:text="@string/verticalsync"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="56dp"
+     android:id="@+id/verticalsync"
+     android:layout_below="@+id/spinnerres"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true" />
+
+ <Switch
+     android:layout_width="70dp"
+     android:layout_height="wrap_content"
+     android:id="@+id/switch1"
+     android:layout_alignTop="@+id/verticalsync"
+     android:layout_toRightOf="@+id/sbartv"
+     android:layout_toEndOf="@+id/sbartv"
+     android:layout_marginLeft="14dp"
+     android:layout_marginStart="14dp" />
 
 </RelativeLayout>

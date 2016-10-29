@@ -2,6 +2,7 @@ package androidbead.beadando;
 
 import android.content.Intent;
 import android.os.PersistableBundle;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,7 +32,13 @@ public class Main2Activity extends AppCompatActivity {
         resu.setText(resulotionfin);
         vsintv.setText(vsyn);
 
-
-        Toast.makeText(this,"Másik activity!!!",Toast.LENGTH_LONG).show();
+        Button bt1 =(Button) findViewById(R.id.back);
+        bt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                System.exit(0);
+            }
+        });
     }
 }
