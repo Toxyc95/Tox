@@ -36,4 +36,13 @@
         android:layout_centerHorizontal="true"
         android:textAlignment="center"
         android:hint="Username" />
+
+    <Button
+        android:text="Back to Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_registration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/rg_backtologin" />
 </RelativeLayout>
