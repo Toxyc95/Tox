@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Beadando2.2</string>
+    <string name="app_name">Login App</string>
+    <string name="husern">Username</string>
+    <string name="huserp">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Registration</string>
+    <string name="backtologin">Back to Login</string>
+    <string name="youareloggedin">You are logged in!</string>
+    <string name="logout">Logout</string>
 </resources>

@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background"
     tools:context="androidbead2.beadando22.Login">
 
     <EditText
@@ -19,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
         android:id="@+id/lg_username"
-        android:hint="Username"
+        android:hint="@string/husern"
         android:textAlignment="center" />
 
     <EditText
@@ -32,11 +33,11 @@
         android:layout_alignStart="@+id/lg_username"
         android:layout_marginTop="22dp"
         android:id="@+id/lg_password"
-        android:hint="Password"
+        android:hint="@string/huserp"
         android:textAlignment="center" />
 
     <Button
-        android:text="Login"
+        android:text="@string/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lg_password"
@@ -46,7 +47,7 @@
         android:textAlignment="center" />
 
     <Button
-        android:text="Registration"
+        android:text="@string/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"

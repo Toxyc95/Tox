@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bejelentkező Applikáció</string>
+    <string name="husern">Felhasználónév</string>
+    <string name="huserp">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="register">Regisztráció</string>
+    <string name="backtologin">Vissza a Bejelentkezéshez!</string>
+    <string name="youareloggedin">Be vagy jelentkezve!</string>
+    <string name="logout">Kijelentkezés</string>
+</resources>
